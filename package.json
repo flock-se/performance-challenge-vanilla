@@ -4,6 +4,7 @@
   "description": "A wallet application for the DAI cryptocurrency",
   "scripts": {
     "build": "rollup -c",
+    "start": "browser-sync start --config browsersync.config.js --port ${PORT}",
     "dev": "browser-sync start --config browsersync.config.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
