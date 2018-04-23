@@ -58,7 +58,7 @@ class AppElement extends GluonElement {
   }
 
   requestStatus() {
-    fetch('http://performance-challenge.herokuapp.com/api/status')
+    fetch('https://performance-challenge.herokuapp.com/api/status')
       .then(response => {
         if (response.ok) {
           return response.json()
