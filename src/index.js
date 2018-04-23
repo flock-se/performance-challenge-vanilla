@@ -6,10 +6,6 @@ class AppElement extends GluonElement {
     return html`
       <link rel="stylesheet" href="/bootstrap.min.css">
       <style>
-        :host([loading]) {
-          display: none;
-        }
-      
         :host {
           display: block;
         }
@@ -67,7 +63,6 @@ class AppElement extends GluonElement {
         }
       })
       .then(alert => {
-        this.removeAttribute('loading')
         this.setAlert(alert.text, alert.code)
       })
   }
